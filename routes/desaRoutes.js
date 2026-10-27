@@ -17,10 +17,10 @@ router.get('/:id', desaController.getDesaById)
 router.post('/', desaController.createDesa)
 
 // PUT UPDATE data "potensi desa"
-router.post('/:id', desaController.updateDesa)
+router.put('/:id', desaController.updateDesa)
 
 // DELETE data "potensi desa"
-router.post('/:id', desaController.deleteDesa)
+router.delete('/:id', desaController.deleteDesa)
 
 // Mengekspor router agar bisa digunakan di server.js
 module.exports = router;
